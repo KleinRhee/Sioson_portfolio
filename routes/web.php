@@ -9,3 +9,15 @@ Route::get('/welcome', function () {
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/projects', function () {
+    return view('projects');
+});
+
+Route::get('/contact', function () {
+    return view('contact');
+});
