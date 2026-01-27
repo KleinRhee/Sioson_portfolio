@@ -1,0 +1,11 @@
+[33mcommit 768f93e6ac2fc2d9fec8b19de65f4f7e2063f2a3[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;32mmaster[m[33m)[m
+Author: KLEIN RHEE PAGULONG SIOSON <2010614@cc.usls.edu>
+Date:   Thu Jan 15 14:02:48 2026 +0800
+
+    1.5. Hands-on Quiz #1
+
+[33mcommit 16e7c5a668e94d38788cb6db97db79e2dc9f6d0c[m
+Author: KLEIN RHEE PAGULONG SIOSON <2010614@cc.usls.edu>
+Date:   Thu Jan 15 13:57:00 2026 +0800
+
+    Initial commit: Laravel project with home view and root route
