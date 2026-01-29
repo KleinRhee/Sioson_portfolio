@@ -14,7 +14,7 @@ return new class extends Migration
     Schema::create('skills', function (Blueprint $table) {
         $table->id();                 // single primary key
         $table->string('name');      // normal column
-        $table->integer('level');    // normal column
+        $table->string('level');    // normal column
         $table->timestamps();
     });
 }
