@@ -11,38 +11,37 @@ use App\Models\Contact;
 
 class PortfolioController extends Controller
 {
-    // Home / About Me Page
     public function home() 
     {
-        $profile = Profile::first(); // Eloquent ORM
+        $profile = Profile::first(); 
         return view('home', compact('profile'));
     }
 
-    // Skills Page
     public function skills() 
     {
-        $skills = Skill::all(); // Eloquent ORM
-        return view('skills', compact('skills'));
+        $profile = Profile::first();
+        $skills = Skill::all(); 
+        return view('skills', compact('profile', 'skills'));
     }
 
-    // Projects Page
     public function projects() 
     {
-        $projects = Project::all(); // Eloquent ORM
-        return view('projects', compact('projects'));
+        $profile = Profile::first();
+        $projects = Project::all(); 
+        return view('projects', compact('profile', 'projects'));
     }
 
-    // Experience & Education Page
     public function experience() 
     {
-        $experiences = Experience::all(); // Eloquent ORM
-        return view('experience', compact('experiences'));
+        $profile = Profile::first();
+        $experiences = Experience::all(); 
+        return view('experience', compact('profile', 'experiences'));
     }
 
-    // Contact Page (Display Only)
     public function contact() 
     {
-        $contact = Contact::first(); // Eloquent ORM
-        return view('contact', compact('contact'));
+        $profile = Profile::first();
+        $contact = Contact::first(); 
+        return view('contact', compact('profile', 'contact'));
     }
 }
